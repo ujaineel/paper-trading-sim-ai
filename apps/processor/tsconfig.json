@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES2022" /* Target AWS Lambda Node 20 runtime */,
+    "module": "NodeNext" /* Use modern ESM modules */,
+    "moduleResolution": "NodeNext",
+    "outDir": "./dist" /* Where Terraform looks for code */,
+    "strict": true /* Resume-grade type safety */,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "@trading-sim/shared": ["../shared/src"]
+    }
+  },
+  "include": ["index.ts"],
+  "exclude": ["node_modules", "dist"]
+}
