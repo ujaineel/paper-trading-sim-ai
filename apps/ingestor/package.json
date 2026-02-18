@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "execute": "tsx src/index.ts"
+    "execute": "tsx src/index.ts",
+    "build": "esbuild src/index.ts --bundle --platform=node --target=node22 --format=cjs --outfile=dist/index.js --external:@aws-sdk/*"
   },
   "keywords": [],
   "author": "",
@@ -15,12 +16,13 @@
     "@aws-sdk/client-sqs": "^3.990.0",
     "@aws-sdk/client-ssm": "^3.990.0",
     "@trading-sim/shared": "workspace:*",
-    "dotenv": "^17.3.1",
-    "fastify": "^5.7.4",
+    "aws-lambda": "^1.0.7",
     "rss-parser": "^3.13.0"
   },
   "devDependencies": {
+    "@types/aws-lambda": "^8.10.160",
     "@types/node": "^25.2.3",
+    "esbuild": "0.27.3",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3"
   }
