@@ -1,6 +1,24 @@
 {
   "name": "@trading-sim/shared",
   "version": "1.0.0",
-  "main": "./src/index.ts",
-  "types": "./src/index.ts"
+  "exports": {
+    "./constants": "./constants/index.ts",
+    "./db": "./db/index.ts",
+    "./db/schema": "./db/schema.ts",
+    "./types": "./types/index.ts"
+  },
+  "scripts": {
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "tsx db/migrate.ts",
+    "db:studio": "drizzle-kit studio"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.44.0",
+    "pg": "^8.16.0"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.15.4",
+    "drizzle-kit": "^0.31.0",
+    "tsx": "^4.21.0"
+  }
 }
