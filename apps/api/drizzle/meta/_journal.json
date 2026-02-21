@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1771638306769,
+      "tag": "0000_glamorous_spot",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1771639193174,
+      "tag": "0001_right_gertrude_yorkes",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1771645576057,
+      "tag": "0002_optimal_tarot",
+      "breakpoints": true
+    }
+  ]
+}
